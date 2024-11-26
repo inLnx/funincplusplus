@@ -39,13 +39,13 @@ int applooper = 5;
     string oper;
     string variable;   
     string coreness;
-    extern int aGlobalVariable;
-    extern int numthree;
-    extern int numone;
-    extern int numtwo;
-    extern int password;
-    extern int createdPass;
-    extern  int enteredpass;
+    int aGlobalVariable;
+    int numthree;
+    int numone;
+    int numtwo;
+    int password;
+    int createdPass;
+    int enteredpass;
 
         //  switch for home screen  
         cout << "Select a number and see what it does" << endl;
