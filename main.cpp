@@ -105,13 +105,16 @@ int applooper = 5;
 
         break;
         case 7:
-            cout << "Seven" << endl;
+            cout << "You clicked 7, Seven is my favorite number" << endl;
             break;
         case 8:
-            cout << "Eight" << endl;
+            cout << "Eight bottles of water on the wall" << endl;
+            cout << "Eight bottles of water" << endl;
+            cout << "I took one down, drank it" << endl;
+            cout << "Seven bottles of water on the wall" << endl;
             break;
         case 9:
-            cout << "Nine" << endl;
+            cout << "Wink Wink, if you press 10 something will happen" << endl;
             break;
         case 10:
            cout << "Powering off" << endl; 
