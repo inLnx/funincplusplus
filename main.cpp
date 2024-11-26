@@ -4,6 +4,7 @@
 #include <fstream>
 #include <ctime>
 #include <iomanip>
+#include <cstdlib>
 using namespace std;
 
 
@@ -28,9 +29,6 @@ int applooper = 5;
     cout << "__________" << endl;
     cout << "|         |" << endl;
     cout << "|  ______ |" << endl;
-     int numone;
-    int numtwo;
-    string oper;
     cout << "| |    | |" << endl;
     cout << "| | Booting" << endl;
     cout << "| ------  |" << endl;
@@ -38,29 +36,17 @@ int applooper = 5;
     cout << "ScutoidC++" << endl;
     
 
-
-
+    cout << "Starting Core Services..." << endl;
+    int numone;
+    int numtwo;
+    string oper;
     int password;
     int createdPass;
-    cout << "Create password." << endl;
-    cin >> createdPass;
-    cout << "Re-enter" << endl;
-    cin >> profile.PIN;
-
-   
-
-
-
-    // Validates Password.
-    if (profile.PIN == createdPass) {
-
-        cout << "correct. Welcome" << endl;
-
-
+    int enteredpass;
 
 
         //  switch for home screen  
-        cout << "Enter 1 for commands" << endl;
+        cout << "Select a number and see what it does" << endl;
         
         
         
@@ -73,12 +59,12 @@ int applooper = 5;
             
          switch (appSelect) {
         case 1:
-            help()
+        cout << "you pressed 1. Good Job :D" << endl;
             break;
         case 2:
             cout << "Welcome to notepad. press enter to get text repeated"<< endl;
             cin >> Notepadtext;
-            cout << Notepadtext; 
+            cout << Notepadtext << endl;
             break;
         case 3:
             cout << "Enter first name" << endl;
@@ -112,11 +98,20 @@ int applooper = 5;
                
             break;
         case 5:
-            cout << "5" << endl;
+            cout << "you can find my github at: https://www.github.com/inlnx" << endl;
             break;
         case 6:
-            cout << "Six" << endl;
-            break;
+            cout << "Yo, Ho Ho, ur computer is mine" << endl;
+            cout << "If you have linux" << endl; 
+            
+                int result = system("./script.sh"); // Assuming the script is in the same directory
+
+    if (result == 0) {
+        std::cout << "Script executed successfully." << std::endl;
+    } else {
+        std::cout << "Script execution failed with code: " << result << std::endl;
+    }
+    break;
         case 7:
             cout << "Seven" << endl;
             break;
@@ -130,18 +125,11 @@ int applooper = 5;
            cout << "Powering off" << endl; 
             break;
         default:
-            cout << "E R R O R : A P P  N O T  F O U N D" << endl;
+            cout << "error 4" << endl;
             break;
     }
 }
     }
-void help(){
-cout << "Commands. 1=commands 2=Notepad 3=profile 4=Calculator" << endl;
-cout << "returing to app menu";
-main()   
-
-
-}
 
    
 
@@ -160,9 +148,3 @@ main()
 
 
     
-    else {
-        cout << "incorrrect. Reload to try again!";
-
-    };
-
-}
