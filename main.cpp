@@ -5,6 +5,7 @@
 #include <ctime>
 #include <iomanip>
 #include <cstdlib>
+#include "variables.h"
 using namespace std;
 
 
@@ -30,21 +31,21 @@ int applooper = 5;
     
 
     cout << "Starting Core Services..." << endl;
-    string variable;   
-    string coreness;
-    int numthree;
-    int numone;
-    int numtwo;
-    string oper;
-    int password;
-    int createdPass;
-    int enteredpass;
     string one;
     string two;
     string three;
     string four;
     string five;
-
+    string oper;
+    string variable;   
+    string coreness;
+    extern int aGlobalVariable;
+    extern int numthree;
+    extern int numone;
+    extern int numtwo;
+    extern int password;
+    extern int createdPass;
+    extern  int enteredpass;
 
         //  switch for home screen  
         cout << "Select a number and see what it does" << endl;
