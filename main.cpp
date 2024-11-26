@@ -95,8 +95,7 @@ int applooper = 5;
             cin >> numone;
             cout << "enter second" << endl;
             cin >> numtwo; 
-               
-               cout << numone + numtwo  ; 
+            cout << numone + numtwo << endl; 
                
             break;
         case 5:
