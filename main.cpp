@@ -26,23 +26,24 @@ int main()
 int applooper = 5;
 
  // Password slash Bootup Sequence
-    cout << "__________" << endl;
-    cout << "|         |" << endl;
-    cout << "|  ______ |" << endl;
-    cout << "| |    | |" << endl;
-    cout << "| | Booting" << endl;
-    cout << "| ------  |" << endl;
-    cout << "----------" << endl;
     cout << "ScutoidC++" << endl;
     
 
     cout << "Starting Core Services..." << endl;
+    string variable;   
+    string coreness;
+    int numthree;
     int numone;
     int numtwo;
     string oper;
     int password;
     int createdPass;
     int enteredpass;
+    string one;
+    string two;
+    string three;
+    string four;
+    string five;
 
 
         //  switch for home screen  
@@ -101,17 +102,8 @@ int applooper = 5;
             cout << "you can find my github at: https://www.github.com/inlnx" << endl;
             break;
         case 6:
-            cout << "Yo, Ho Ho, ur computer is mine" << endl;
-            cout << "If you have linux" << endl; 
-            
-                int result = system("./script.sh"); // Assuming the script is in the same directory
 
-    if (result == 0) {
-        std::cout << "Script executed successfully." << std::endl;
-    } else {
-        std::cout << "Script execution failed with code: " << result << std::endl;
-    }
-    break;
+        break;
         case 7:
             cout << "Seven" << endl;
             break;
